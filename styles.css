@@ -40,7 +40,7 @@ footer {
     text-align: center;
 }
 
-button {
+.button {
     background-color: #00d3b5;
     border-radius: 50px !important;
     border-color: transparent;
@@ -209,4 +209,46 @@ h2 {
 
 footer p {
     margin: 60px 0;
+}
+
+.form_container {
+    background-color: white;
+    padding: 30px;
+}
+
+.form_container h4 {
+    font-size: 20px;
+}
+
+.form_fieldContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.form_fieldContainer input,
+.form_fieldContainer textarea {
+    border-radius: 0;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    margin-top: 10px;
+}
+
+.form_fieldContainer input {
+    height: 2em;
+}
+
+.form_fieldContainer textarea {
+    padding: 1em;
+}
+
+.form_nameContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_nameContainer .form_fieldContainer {
+    width: 45%;
+    margin-bottom: 0;
 }
