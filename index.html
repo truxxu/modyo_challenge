@@ -5,19 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!-- Flickity -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!-- Flaticon -->
-    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
     <!-- Icomoon -->
     <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Section 1</h1>
-    <p>test</p>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <ul class="navbar_list">
+                <li><a href="#home" class="navbar_listLink">Home</a></li>
+                <li><a href="#features" class="navbar_listLink">Features</a></li>
+                <li><a href="#about" class="navbar_listLink">About Us</a></li>
+                <li><a href="#testimonials" class="navbar_listLink">Testimonials</a></li>
+                <li><a href="#" class="navbar_listLink">Blogs</a></li>
+                <li><a href="#form" class="navbar_listLink">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar_gradient"></div>
+    </nav>
+
+    <section id="home">
+        <div class="section_container-white">
+            <div class="home_container">
+                <div class="home_textContainer">
+                    <h1>Grow your business faster</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button>Get Started</button>
+                </div>
+                <div class="home_imageContainer">
+                    <img src="./images/landing_1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="section_container-gray">
+            <h2>Features</h2>
+            <div class="cards_container">
+                <div class="feature_card">
+                    <div class="icon_container">
+                        <i class="icon-refresh"></i>
+                    </div>
+                    <h4>Business Consulting</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="feature_card">
+                    <div class="icon_container">
+                        <i class="icon-local_convenience_store"></i>
+                    </div>
+                    <h4>Market Analysis</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="feature_card">
+                    <div class="icon_container">
+                        <i class="icon-shopping_basket"></i>
+                    </div>
+                    <h4>User Monitoring</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="feature_card">
+                    <div class="icon_container">
+                        <i class="icon-settings_backup_restore"></i>
+                    </div>
+                    <h4>Insurance Consulting</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="feature_card">
+                    <div class="icon_container">
+                        <i class="icon-smile-o"></i>
+                    </div>
+                    <h4>Customer Satisfied</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="feature_card">
+                    <div class="icon_container">
+                        <i class="icon-plug"></i>
+                    </div>
+                    <h4>Plug and Play</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prototypes">
+        <div class="section_container-white">
+            <div class="about_container">
+                <img src="./images/do_ui_kit_download_cta_floating_devices-2x.png" alt="">
+                <div class="about_textContainer">
+                    <h2>Create interactive prototypes</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="list_container">
+                        <p><span class="icon-check2"></span> Nostrum exercitationem ullam corporis</p>
+                        <p><span class="icon-check2"></span> Magni dolores eos qui ratione voluptatem</p>
+                    </div>
+                    <div class="quote_card">
+                        <div>
+                            <img src="" alt="">
+                            <p>Name</p>
+                            <p>position</p>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="section_container-gray">
+            <h2>About Us</h2>
+            <div class="about_container">
+                <img src="./images/about_1.jpg" alt="">
+                <div class="about_textContainer">
+                    <h3>Create interactive prototypes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="section_container-white">
+            <h2>Testimonials</h2>
+            <div class="testimony_container">
+                <img src="./images/person_1.jpg" alt="person">
+                <p class="testimony_text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"</p>
+                <p class="testimony_name">Name</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="section_container-gray">
+            <h2>Get in touch</h2>
+            <p>text</p>
+            <button>Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2019 All rights reserved</p>
+    </footer>
     <script type="text/javascript" src="app.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
