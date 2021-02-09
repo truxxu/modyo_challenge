@@ -1,10 +1,4 @@
-let carouselCard = document.getElementById('test');
-
-const removeDuplicates = (myArr, prop) => {
-  return myArr.filter((obj, pos, arr) => {
-      return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos
-  })
-};
+let carouselContainer = document.getElementById('carousel');
 
 const fetchData = async() => {
   const [postsResponse, usersResponse] = await Promise.all([
@@ -17,18 +11,28 @@ const fetchData = async() => {
   return { posts, users };
 };
 
+const removeDuplicates = (myArr, prop) => {
+  return myArr.filter((obj, pos, arr) => {
+      return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos
+  })
+};
+
 const findUser = (arr, id) => arr.filter(user => user.id === id);
 
-fetchData().then(({posts, users}) => {
-  let testimonials = removeDuplicates(posts, 'userId').slice(0, 4);
-  testimonials.map(testimony => {
-    let name = findUser(users, testimony.userId)[0].name;
-    carouselCard.innerHTML += `<div class="swiper-slide">
-      <div class="testimony_container">
-          <img src="./images/person_${testimony.userId}.jpg" alt="person">
-          <p class="testimony_text">${testimony.body}</p>
-          <p class="testimony_name">${name}</p>
-      </div>
-    </div>`
-  });
+fetchData()
+  .then(({posts, users}) => {
+    let testimonials = removeDuplicates(posts, 'userId').slice(0, 4);
+
+    testimonials.map(testimony => {
+      let name = findUser(users, testimony.userId)[0].name;
+      carouselContainer.innerHTML += `<div class="swiper-slide">
+        <div class="testimony_container">
+            <img src="./images/person_${testimony.userId}.jpg" alt="person">
+            <p class="testimony_text">${testimony.body}</p>
+            <p class="testimony_name">${name}</p>
+        </div>
+      </div>`
+    });
+    
+  swiper.updateSlides()	
 });
