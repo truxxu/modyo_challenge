@@ -1,3 +1,16 @@
+// Carousel initialization
+
+const swiper = new Swiper('.swiper-container', {
+  pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+  },
+  autoplay: {
+      delay: 3000,
+  },
+});
+
+
 let carouselContainer = document.getElementById('carousel');
 
 const fetchData = async() => {
@@ -36,3 +49,12 @@ fetchData()
     
   swiper.updateSlides()	
 });
+
+const showMenu = () => {
+  const x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+      x.style.display = "none";
+  } else {
+      x.style.display = "block";
+  }
+}

@@ -97,6 +97,35 @@ h2 {
     background: linear-gradient(whitesmoke, white);
 }
 
+.navbar_container-mobile {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .navbar_container-mobile #myLinks {
+    display: none;
+  }
+  
+  .navbar_container-mobile a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .navbar_container-mobile a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .navbar_container-mobile a:hover {
+    background-color: whitesmoke;
+    color: #00d3b5;
+  }
+
 /* Home */
 
 .home_container {
@@ -107,10 +136,11 @@ h2 {
 
 .home_imageContainer {
     width: 45%;
+    overflow: hidden;
 }
 
 .home_textContainer {
-    width: 20%;
+    width: 30%;
     align-self: center;
 }
 
@@ -135,6 +165,10 @@ h2 {
     text-decoration: none;
     color: #00d3b5;
     margin-top: 15px;
+}
+
+.feature_card p {
+    margin: 15px 0;
 }
 
 .icon_container {
@@ -270,7 +304,7 @@ h2 {
 }
 
 .about_textContainer h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: unset;
     margin-bottom: 20px;
 }
@@ -327,4 +361,82 @@ footer p {
 
 footer {
     text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 1023px) {
+    .navbar_container,
+    .navbar_gradient {
+        display: none;
+    }
+    
+    .home_container {
+        flex-direction: column-reverse;
+    }
+
+    .home_imageContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .home_imageContainer img {
+        width: 90%;
+    }
+
+    .home_textContainer, 
+    .about_textContainer,
+    .testimony_text {
+        width: 90%;
+    }
+
+    .home_textContainer h1{
+        margin-bottom: 20px;
+        font-size: 30px !important;    
+    }
+
+    .prototype_container,
+    .about_container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .prototype_container .about_textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prototype_container>img:first-of-type {
+        width: 70%;
+    }
+
+    .about_container img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .cards_container {
+        width: 100%;
+    }
+
+    .feature_card {
+        width: 75%;
+    }
+
+    .quote_card {
+        width: 235px;
+    }
+
+    .form_container {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar_container-mobile {
+        display: none;
+      }
 }

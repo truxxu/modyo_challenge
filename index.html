@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Flickity -->
+    <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Icomoon -->
     <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
@@ -24,6 +24,19 @@
                 <li><a href="#" class="navbar_listLink">Blogs</a></li>
                 <li><a href="#form" class="navbar_listLink-contact">Contact</a></li>
             </ul>
+        </div>
+        <div class="navbar_container-mobile">
+            <a href="#" class="active">Landerz</a>
+            <div id="myLinks">
+              <a href="#features">Features</a>
+              <a href="#about">About Us</a>
+              <a href="#testimonials">Testimonials</a>
+              <a href="#">Blogs</a>
+              <a href="#form">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                <i class="icon-menu"></i>
+            </a>
         </div>
         <div class="navbar_gradient"></div>
     </nav>
@@ -187,18 +200,8 @@
     <footer>
         <p>Copyright © 2019 All rights reserved</p>
     </footer>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-            autoplay: {
-                delay: 3000,
-            },
-        });	
-        </script>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
