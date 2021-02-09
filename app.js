@@ -41,7 +41,7 @@ fetchData()
       carouselContainer.innerHTML += `<div class="swiper-slide">
         <div class="testimony_container">
             <img src="./images/person_${testimony.userId}.jpg" alt="person">
-            <p class="testimony_text">${testimony.body}</p>
+            <p class="testimony_text">"${testimony.body}"</p>
             <p class="testimony_name">${name}</p>
         </div>
       </div>`
